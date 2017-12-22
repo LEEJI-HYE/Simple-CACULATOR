@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>간단 계산기 만들기</title>
+	<script type="text/javascript" src="../js/caculator.js"></script>
+</head>
+<body>
+
+ <h1>간단 계산기 만들기</h1>
+
+  <!-- 입력부 -->
+  <input type="text" id="caculator1"/>
+
+   <select>
+  	<option name="selected"> 사칙연산 </option>
+  	<option value="1">+</option>
+  	<option value="2">-</option>
+  	<option value="3">*</option>
+  	<option value="4">/</option>
+   </select>
+
+   <input type="text" id="caculator2"/>
+
+   <button onclick="caculator()">계산</button>
+
+  <!-- 출력부 -->
+  <p id="basicCaculator"></p>
+
+  <script>
+  	function caculator(){
+  		var input1 = Number(document.getElementById('caculator1').value);
+  		var input2 = Number(document.getElementById('caculator2').value);
+
+  		console.log(input1);
+  		console.log(input2);
+
+  		var sum = document.getElementById('caculator').value;
+
+  		var puls = Number(input1) + Number(input2) = sum;
+  		var minus = Number(input1) - Number(input2) = sum;
+  		var muilti = Number(input1) * Number(input2) = sum;
+  		var divide = Number(input1) / Number(input2) = sum;
+
+  		if(sum == "+"){puls();}
+  		else if(sum == "-"){minus();}
+  		else if(sum == "*"){muilti();}
+  		else if(sum == "/"){divide();}
+
+  		document.getElementById(puls)
+ 
+
+  	}
+  </script>
+
+
+</body>
+</html>
