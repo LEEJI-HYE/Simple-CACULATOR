@@ -12,11 +12,12 @@
   <input type="text" id="caculator1"/>
 
    <select>
-  	<option name="selected"> 사칙연산 </option>
-  	<option value="1">+</option>
+ 
+  	<option value="1" selected>+</option>
   	<option value="2">-</option>
   	<option value="3">*</option>
   	<option value="4">/</option>
+  	
    </select>
 
    <input type="text" id="caculator2"/>
@@ -34,19 +35,9 @@
   		console.log(input1);
   		console.log(input2);
 
-  		var sum = document.getElementById('caculator').value;
-
-  		var puls = Number(input1) + Number(input2) = sum;
-  		var minus = Number(input1) - Number(input2) = sum;
-  		var muilti = Number(input1) * Number(input2) = sum;
-  		var divide = Number(input1) / Number(input2) = sum;
-
-  		if(sum == "+"){puls();}
-  		else if(sum == "-"){minus();}
-  		else if(sum == "*"){muilti();}
-  		else if(sum == "/"){divide();}
-
-  		document.getElementById(puls)
+  		var sum;
+  		var sum = "caculator";
+  		var sum = input1
  
 
   	}
